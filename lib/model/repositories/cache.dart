@@ -14,7 +14,7 @@ List<ProjectModel> projects = [
     project: "Flutter App",
     title: "Wembley Studios Movies",
     description:
-        "Aplicación desarrollada en Flutter para la gestión de películas favoritas de los empleados de Wembley Studios.",
+        "Aplicación desarrollada en Flutter para la gestión de películas favoritas de los empleados de Wembley Studios. El patrón de diseño seguido ha sido Model View View-Model (MVVM), en la cual hemos incorporado la funcionalidad de Provider para manejar los estados de la app.",
     appPhotos: AppConstants.project4,
     projectLink: "https://github.com/carlosparra1998/WembleyStudiosMovies",
     techUsed: [
