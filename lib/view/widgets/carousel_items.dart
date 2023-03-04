@@ -3,6 +3,7 @@ import '../../model/classes/carousel_item_model.dart';
 import '../../model/classes/utility.dart';
 import '../../utils/constants.dart';
 import '../../utils/strings.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
       5,
@@ -19,7 +20,7 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                   children: [
                     Text(
                       Strings.completeName,
-                      style: const TextStyle(
+                      style: GoogleFonts.roboto( 
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                           fontSize: 28.0),
@@ -29,7 +30,7 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                     ),
                     Text(
                       Strings.job,
-                      style: const TextStyle(
+                      style: GoogleFonts.roboto(
                           fontWeight: FontWeight.normal,
                           color: Color.fromARGB(255, 203, 52, 230),
                           fontSize: 25.0),
@@ -41,7 +42,7 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                       width: 500,
                       child: Text(
                         Strings.phrase,
-                        style: const TextStyle(
+                        style: GoogleFonts.roboto(
                             fontWeight: FontWeight.bold,
                             color: Colors.grey,
                             fontSize: 24.0),
@@ -58,7 +59,7 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                         cursor: SystemMouseCursors.click,
                         child: Text(
                           Strings.download,
-                          style: const TextStyle(
+                          style: GoogleFonts.roboto(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
                             fontSize: 27.0,

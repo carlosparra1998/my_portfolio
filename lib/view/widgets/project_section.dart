@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../model/classes/project_model.dart';
 import '../../model/classes/utility.dart';
@@ -88,7 +89,7 @@ class ProjectSection extends StatelessWidget {
                         children: [
                           Text(
                             projectModel.project,
-                            style: TextStyle(
+                            style: GoogleFonts.roboto(
                               color: kPrimaryColor,
                               fontWeight: FontWeight.w900,
                               fontSize: 16.0,
@@ -99,7 +100,7 @@ class ProjectSection extends StatelessWidget {
                           ),
                           Text(
                             projectModel.title,
-                            style: TextStyle
+                            style: GoogleFonts.roboto
                             (
                               color: Colors.white,
                               fontWeight: FontWeight.w900,
@@ -112,7 +113,7 @@ class ProjectSection extends StatelessWidget {
                           ),
                           Text(
                             projectModel.description,
-                            style: const TextStyle(
+                            style:GoogleFonts.roboto(
                               color: kCaptionColor,
                               height: 1.5,
                               fontSize: 15.0,
@@ -125,7 +126,7 @@ class ProjectSection extends StatelessWidget {
                               ? Container()
                               : Text(
                                   Strings.techUsed,
-                                  style: TextStyle(
+                                  style: GoogleFonts.roboto(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w900,
                                     fontSize: 16.0,
@@ -166,7 +167,7 @@ class ProjectSection extends StatelessWidget {
                                         (projectModel.buttonText ??
                                                 "Explore MORE")
                                             .toUpperCase(),
-                                        style: const TextStyle(
+                                        style: GoogleFonts.roboto(
                                           color:  Colors.black,
                                           fontSize: 13.0,
                                           fontWeight: FontWeight.bold,

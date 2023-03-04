@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/model/repositories/cache.dart';
 import 'package:my_portfolio/view/widgets/project_section.dart';
 
@@ -17,7 +18,7 @@ class Portfolio extends StatelessWidget {
       children: [
         Text(
           Strings.portfolio,
-          style: const TextStyle(
+          style:GoogleFonts.roboto(
               fontWeight: FontWeight.bold,
               color: Color.fromARGB(255, 62, 190, 66),
               fontSize: 22.0),
@@ -27,7 +28,7 @@ class Portfolio extends StatelessWidget {
         ),
         Text(
           Strings.workShow,
-          style: TextStyle(
+          style: GoogleFonts.roboto(
             color: Colors.grey[400],
             fontSize: 19,
           ),

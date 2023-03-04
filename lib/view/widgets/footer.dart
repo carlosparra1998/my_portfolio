@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../model/classes/utility.dart';
 import '../../model/repositories/cache.dart';
@@ -71,7 +72,7 @@ Widget _buildUi(double width, BuildContext context) {
                                       ),
                                       Text(
                                         footerItem.title,
-                                        style: TextStyle(
+                                        style: GoogleFonts.roboto(
                                           color: Colors.white,
                                           fontSize: 18.0,
                                           fontWeight: FontWeight.w700,
@@ -88,14 +89,14 @@ Widget _buildUi(double width, BuildContext context) {
                                       children: [
                                         TextSpan(
                                           text: "${footerItem.text1}\n",
-                                          style: const TextStyle(
+                                          style: GoogleFonts.roboto(
                                             color: kCaptionColor,
                                             height: 1.8,
                                           ),
                                         ),
                                         TextSpan(
                                           text: "${footerItem.text2}\n",
-                                          style: const TextStyle(
+                                          style: GoogleFonts.roboto(
                                             color: kCaptionColor,
                                           ),
                                         )
@@ -122,7 +123,7 @@ Widget _buildUi(double width, BuildContext context) {
                     padding: EdgeInsets.only(bottom: 8.0),
                     child: Text(
                       Strings.finalPhrase,
-                      style: TextStyle(
+                      style: GoogleFonts.roboto(
                         color: kCaptionColor,
                       ),
                     ),

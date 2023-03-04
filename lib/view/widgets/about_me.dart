@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/model/classes/utility.dart';
 import 'package:my_portfolio/utils/screen_helper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -50,7 +51,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       Text(
                         Strings.aboutMe,
-                        style: const TextStyle(
+                        style: GoogleFonts.roboto(
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 62, 190, 66),
                             fontSize: 22.0),
@@ -60,7 +61,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       Text(
                         Strings.description,
-                        style: const TextStyle(
+                        style: GoogleFonts.roboto(
                             fontWeight: FontWeight.normal,
                             color: Color.fromARGB(255, 173, 172, 172),
                             fontSize: 19.0),
@@ -86,7 +87,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       Text(
                         Strings.tech,
-                        style: const TextStyle(
+                        style:GoogleFonts.roboto(
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 252, 252, 252),
                             fontSize: 19.0),
@@ -96,7 +97,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       Text(
                         Strings.mobileDev,
-                        style: const TextStyle(
+                        style: GoogleFonts.roboto(
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 173, 172, 172),
                             fontSize: 17.0),
@@ -140,7 +141,7 @@ class _AboutSectionState extends State<AboutSection> {
                                                 ),
                                                 Text(
                                                   e.name,
-                                                  style: const TextStyle(
+                                                  style:GoogleFonts.roboto(
                                                     fontSize: 12.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),
@@ -160,7 +161,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       Text(
                         Strings.otherTech,
-                        style: const TextStyle(
+                        style: GoogleFonts.roboto(
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 173, 172, 172),
                             fontSize: 17.0),
@@ -204,7 +205,7 @@ class _AboutSectionState extends State<AboutSection> {
                                                 ),
                                                 Text(
                                                   e.name,
-                                                  style: const TextStyle(
+                                                  style: GoogleFonts.roboto(
                                                     fontSize: 12.0,
                                                     fontWeight: FontWeight.bold,
                                                   ),

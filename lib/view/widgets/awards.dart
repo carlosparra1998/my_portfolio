@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/model/classes/utility.dart';
 import 'package:my_portfolio/utils/screen_helper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -50,7 +51,7 @@ class _Awards extends State<Awards> {
                       ),
                       Text(
                         Strings.awards,
-                        style: const TextStyle(
+                        style: GoogleFonts.roboto(
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 62, 190, 66),
                             fontSize: 22.0),
@@ -63,7 +64,7 @@ class _Awards extends State<Awards> {
                         TextSpan(
                             text:
                                 "Trabajo Fin de Grado (TFG) más innovador 2021-2022 de la Fundación Campollano",
-                            style: const TextStyle(
+                            style: GoogleFonts.roboto(
                                 decoration: TextDecoration.underline,
                                 fontWeight: FontWeight.bold,
                                 color: Color.fromARGB(255, 173, 172, 172),

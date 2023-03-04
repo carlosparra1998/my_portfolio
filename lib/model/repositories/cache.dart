@@ -11,18 +11,24 @@ import '../classes/utility.dart';
 
 List<ProjectModel> projects = [
   ProjectModel(
-    project: "Python Deploy",
-    title: "FaceAccess Server",
-    description: "Este proyecto corresponde con el backend del servicio para el funcionamiento del sistema de control de acceso FaceAccess.",
-    appPhotos: AppConstants.project1,
-    projectLink: "https://github.com/carlosparra1998/FACEACCESS_SERVER",
-    techUsed: [TechnologyConstants.linux, TechnologyConstants.psql, TechnologyConstants.python, TechnologyConstants.mqtt],
+    project: "Flutter App",
+    title: "Wembley Studios Movies",
+    description:
+        "Aplicación desarrollada en Flutter para la gestión de películas favoritas de los empleados de Wembley Studios.",
+    appPhotos: AppConstants.project4,
+    projectLink: "https://github.com/carlosparra1998/WembleyStudiosMovies",
+    techUsed: [
+      TechnologyConstants.flutter,
+      TechnologyConstants.dart,
+      TechnologyConstants.git
+    ],
     buttonText: "Github Link",
   ),
   ProjectModel(
     project: "Flutter App",
     title: "FaceAccess Client",
-    description: "Esta es la implementación de la aplicación móvil del cliente, correspondiente al sistema FaceAccess.",
+    description:
+        "Esta es la implementación de la aplicación móvil del cliente, correspondiente al sistema FaceAccess.",
     appPhotos: AppConstants.project2,
     projectLink: "https://github.com/carlosparra1998/FACEACCESS_CLIENT",
     techUsed: [
@@ -36,7 +42,8 @@ List<ProjectModel> projects = [
   ProjectModel(
     project: "Flutter App",
     title: "FaceAccess Employee",
-    description: "Esta es la implementación de la aplicación móvil del empleado, correspondiente al sistema FaceAccess.",
+    description:
+        "Esta es la implementación de la aplicación móvil del empleado, correspondiente al sistema FaceAccess.",
     appPhotos: AppConstants.project3,
     projectLink: "https://github.com/carlosparra1998/FACEACCESS_EMPLOYEE",
     techUsed: [
@@ -45,6 +52,21 @@ List<ProjectModel> projects = [
       TechnologyConstants.mqtt
     ],
     buttonText: "VER GITHUB",
+  ),
+  ProjectModel(
+    project: "Python Deploy",
+    title: "FaceAccess Server",
+    description:
+        "Este proyecto corresponde con el backend del servicio para el funcionamiento del sistema de control de acceso FaceAccess.",
+    appPhotos: AppConstants.project1,
+    projectLink: "https://github.com/carlosparra1998/FACEACCESS_SERVER",
+    techUsed: [
+      TechnologyConstants.linux,
+      TechnologyConstants.psql,
+      TechnologyConstants.python,
+      TechnologyConstants.mqtt
+    ],
+    buttonText: "Github Link",
   ),
 ];
 

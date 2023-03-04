@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../model/classes/stat.dart';
 import '../../model/repositories/cache.dart';
@@ -44,7 +45,7 @@ class ShowStats extends StatelessWidget {
                       children: [
                         Text(
                           stat.count,
-                          style: TextStyle(
+                          style: GoogleFonts.roboto(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 32.0,
@@ -55,7 +56,7 @@ class ShowStats extends StatelessWidget {
                         ),
                         Text(
                           stat.text,
-                          style: const TextStyle(
+                          style: GoogleFonts.roboto(
                             fontSize: 16.0,
                             color: kCaptionColor,
                           ),

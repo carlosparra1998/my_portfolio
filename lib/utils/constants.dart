@@ -5,7 +5,6 @@ import '../model/classes/name_on_tap.dart';
 import '../model/classes/utility.dart';
 import 'screen_helper.dart';
 
-
 const Color kPrimaryColor = Color(0xFFFFD800);
 const Color kBackgroundColor = Color.fromRGBO(7, 17, 26, 1);
 const Color kDangerColor = Color.fromARGB(255, 243, 22, 22);
@@ -15,10 +14,11 @@ const double kDesktopMaxWidth = 1000.0;
 const double kTabletMaxWidth = 760.0;
 double getMobileMaxWidth(BuildContext context) =>
     MediaQuery.of(context).size.width * .8;
-double carouselContainerHeight(BuildContext context) => MediaQuery.of(context).size.height * (ScreenHelper.isMobile(context) ? .7 : .85);
+double carouselContainerHeight(BuildContext context) =>
+    MediaQuery.of(context).size.height *
+    (ScreenHelper.isMobile(context) ? .7 : .85);
 
 class AppConstants {
-
   static const _assets = "assets/";
   static const _outputs = "outputs/";
 
@@ -44,7 +44,7 @@ class AppConstants {
   static const firebaseImage = _techImages + "firebase.png";
   static const dartImage = _techImages + "dart.png";
   static const javaImage = _techImages + "java.png";
-    static const linuxImage = _techImages + "linux.png";
+  static const linuxImage = _techImages + "linux.png";
   static const onnxImage = _techImages + "onnx.png";
   static const psqlImage = _techImages + "psql.png";
 
@@ -60,14 +60,12 @@ class AppConstants {
   static const project1 = _projectsImages + "server.png";
   static const project2 = _projectsImages + "client.png";
   static const project3 = _projectsImages + "employee.png";
+  static const project4 = _projectsImages + "appmovies.png";
+
   static const musicLabImage = _projectsImages + "4.jpeg";
   static const personalFaceImage = _projectsImages + "5.jpeg";
   static const computerStoreImage = _projectsImages + "6.jpeg";
 
   static const _gifs = _outputs + "gif/";
   static const portfolioGif = _gifs + "mobile.gif";
-
 }
-
-
-
