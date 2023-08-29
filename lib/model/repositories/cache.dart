@@ -12,6 +12,20 @@ import '../classes/utility.dart';
 List<ProjectModel> projects = [
   ProjectModel(
     project: "Flutter App",
+    title: "My Personal Tasks",
+    description:
+        "Aplicación desarrollada en Flutter para la gestión de tareas del usuario. El patrón de diseño seguido ha sido Model View View-Model (MVVM), en la cual hemos incorporado la funcionalidad de Provider para manejar los estados de la app.",
+    appPhotos: AppConstants.project5,
+    projectLink: "https://github.com/carlosparra1998/my_personal_tasks",
+    techUsed: [
+      TechnologyConstants.flutter,
+      TechnologyConstants.dart,
+      TechnologyConstants.git
+    ],
+    buttonText: "VER GITHUB",
+  ),
+  ProjectModel(
+    project: "Flutter App",
     title: "Wembley Studios Movies",
     description:
         "Aplicación desarrollada en Flutter para la gestión de películas favoritas de los empleados de Wembley Studios. El patrón de diseño seguido ha sido Model View View-Model (MVVM), en la cual hemos incorporado la funcionalidad de Provider para manejar los estados de la app.",
@@ -22,7 +36,7 @@ List<ProjectModel> projects = [
       TechnologyConstants.dart,
       TechnologyConstants.git
     ],
-    buttonText: "Github Link",
+    buttonText: "VER GITHUB",
   ),
   ProjectModel(
     project: "Flutter App",

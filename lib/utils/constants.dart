@@ -61,6 +61,7 @@ class AppConstants {
   static const project2 = _projectsImages + "client.png";
   static const project3 = _projectsImages + "employee.png";
   static const project4 = _projectsImages + "appmovies.png";
+  static const project5 = _projectsImages + "apptasks.png";
 
   static const musicLabImage = _projectsImages + "4.jpeg";
   static const personalFaceImage = _projectsImages + "5.jpeg";
