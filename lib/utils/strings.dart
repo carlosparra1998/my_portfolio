@@ -1,7 +1,7 @@
 class Strings {
   static String namePage = 'Carlos Parra Portfolio';
   static String completeName = 'Carlos Francisco Parra García';
-  static String job = 'Desarollador móvil';
+  static String job = 'Desarrollador móvil';
   static String phrase =
       '\"La única forma de predecir el futuro es implementarlo\"';
   static String myPhoto = 'assets/main.png';
