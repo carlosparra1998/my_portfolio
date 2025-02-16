@@ -14,7 +14,7 @@ List<ProjectModel> get projects => [
     title: translate.taller29FrontTitleProject,
     description: translate.taller29FrontDescriptionProject,
     appPhotos: AppConstants.project6,
-    projectLink: AppConstants.myPersonalTasksUrl,
+    projectLink: AppConstants.tallerFrontUrl,
     techUsed: [
       TechnologyConstants.flutter,
       TechnologyConstants.dart,
@@ -27,7 +27,7 @@ List<ProjectModel> get projects => [
     title: translate.taller29BackTitleProject,
     description: translate.taller29BackDescriptionProject,
     appPhotos: AppConstants.project6,
-    projectLink: AppConstants.myPersonalTasksUrl,
+    projectLink: AppConstants.tallerBackUrl,
     techUsed: [
       TechnologyConstants.python,
       TechnologyConstants.fastapi,
