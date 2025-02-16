@@ -68,28 +68,37 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                     const H(25),
                     Row(
                       children: [
-                        IconButton(
-                          icon: Image.asset(AppConstants.emailPhotoPath),
-                          iconSize: 10,
-                          onPressed: () {
-                            Utilty.openUrl(AppConstants.mailTo);
-                          },
+                        SizedBox(
+                          width: 40,
+                          height: 40,
+                          child: GestureDetector(
+                            child: Image.asset(AppConstants.emailPhotoPath),
+                            onTap: () {
+                              Utilty.openUrl(AppConstants.mailTo);
+                            },
+                          ),
                         ),
                         const W(40),
-                        IconButton(
-                          icon: Image.asset(AppConstants.linkedinPhotoPath),
-                          iconSize: 10,
-                          onPressed: () {
-                            Utilty.openUrl(AppConstants.linkedinURL);
-                          },
+                        SizedBox(
+                          width: 40,
+                          height: 40,
+                          child: GestureDetector(
+                            child: Image.asset(AppConstants.linkedinPhotoPath),
+                            onTap: () {
+                              Utilty.openUrl(AppConstants.linkedinURL);
+                            },
+                          ),
                         ),
                         const W(40),
-                        IconButton(
-                          icon: Image.asset(AppConstants.githubPhotoPath),
-                          iconSize: 10,
-                          onPressed: () {
-                            Utilty.openUrl(AppConstants.githubMainURL);
-                          },
+                        SizedBox(
+                          width: 40,
+                          height: 40,
+                          child: GestureDetector(
+                            child: Image.asset(AppConstants.githubPhotoPath),
+                            onTap: () {
+                              Utilty.openUrl(AppConstants.githubMainURL);
+                            },
+                          ),
                         ),
                       ],
                     ),

@@ -69,9 +69,9 @@ class AppConstants {
   static const portfolioGif = "${_gifs}mobile.gif";
 
   static String myPhoto = 'assets/main.png';
-  static String emailPhotoPath = 'assets/images/social/email.png';
-  static String linkedinPhotoPath = 'assets/images/social/linkedin-logo.png';
-  static String githubPhotoPath = 'assets/images/social/github.png';
+  static String emailPhotoPath = 'images/social/email.png';
+  static String linkedinPhotoPath = 'images/social/linkedin-logo.png';
+  static String githubPhotoPath = 'images/social/github.png';
   static String githubMainURL = 'https://github.com/carlosparra1998';
   static String githubPageURL =
       "https://github.com/carlosparra1998/carlosparra1998.github.io/raw/main/docs/CV.pdf";
