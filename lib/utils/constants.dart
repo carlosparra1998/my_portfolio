@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-import '../model/classes/name_on_tap.dart';
-import '../model/classes/utility.dart';
 import 'screen_helper.dart';
 
 const Color kPrimaryColor = Color(0xFFFFD800);

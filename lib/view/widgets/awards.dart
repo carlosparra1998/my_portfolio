@@ -1,14 +1,14 @@
-import 'dart:ui';
+// ignore_for_file: depend_on_referenced_packages
+
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/model/classes/utility.dart';
 import 'package:my_portfolio/utils/screen_helper.dart';
+import 'package:my_portfolio/widgets/h.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import '../../model/classes/technology.dart';
-import '../../model/repositories/cache.dart';
 import '../../utils/constants.dart';
 import '../../utils/strings.dart';
 
@@ -52,29 +52,33 @@ class _Awards extends State<Awards> {
                       Text(
                         Strings.awards,
                         style: GoogleFonts.roboto(
-                            fontWeight: FontWeight.bold,
-                            color: Color.fromARGB(255, 62, 190, 66),
-                            fontSize: 22.0),
+                          fontWeight: FontWeight.bold,
+                          color: const Color.fromARGB(255, 62, 190, 66),
+                          fontSize: 22.0,
+                        ),
                       ),
-                      const SizedBox(
-                        height: 18.0,
-                      ),
+                      const H(18),
                       RichText(
-                          text: TextSpan(children: [
-                        TextSpan(
-                            text:
-                                "Trabajo Fin de Grado (TFG) más innovador 2021-2022 de la Fundación Campollano",
-                            style: GoogleFonts.roboto(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text:
+                                  "Trabajo Fin de Grado (TFG) más innovador 2021-2022 de la Fundación Campollano",
+                              style: GoogleFonts.roboto(
                                 decoration: TextDecoration.underline,
                                 fontWeight: FontWeight.bold,
-                                color: Color.fromARGB(255, 173, 172, 172),
-                                fontSize: 19.0),
-                            recognizer: TapGestureRecognizer()
-                              ..onTap = () async {
-                                Utilty.openUrl(
-                                    "https://www.uclm.es/es/noticias/noticias2022/octubre/albacete/premios_fcampollano");
-                              }),
-                      ])),
+                                color: const Color.fromARGB(255, 173, 172, 172),
+                                fontSize: 19.0,
+                              ),
+                              recognizer: TapGestureRecognizer()
+                                ..onTap = () async {
+                                  Utilty.openUrl(
+                                      "https://www.uclm.es/es/noticias/noticias2022/octubre/albacete/premios_fcampollano");
+                                },
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),

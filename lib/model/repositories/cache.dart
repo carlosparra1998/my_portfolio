@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../utils/constants.dart';
 import '../../utils/strings.dart';
 import '../../view/widgets/footer.dart';
-import '../classes/name_on_tap.dart';
 import '../classes/project_model.dart';
 import '../classes/stat.dart';
 import '../classes/technology.dart';

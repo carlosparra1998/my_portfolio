@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -9,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(  
+    return MaterialApp(
       builder: (context, widget) => ResponsiveWrapper.builder(
         ClampingScrollWrapper.builder(context, widget ?? Container()),
         defaultScale: true,
@@ -25,7 +27,9 @@ class MyApp extends StatelessWidget {
       ),
       title: Strings.namePage,
       theme: ThemeData(
-          primarySwatch: Colors.blue, scaffoldBackgroundColor: Colors.black),
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.black,
+      ),
       home: const HomePage(),
     );
   }

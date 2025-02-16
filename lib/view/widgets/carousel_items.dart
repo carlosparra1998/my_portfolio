@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/widgets/h.dart';
+import 'package:my_portfolio/widgets/w.dart';
 import '../../model/classes/carousel_item_model.dart';
 import '../../model/classes/utility.dart';
 import '../../utils/constants.dart';
@@ -25,19 +27,15 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                           color: Colors.white,
                           fontSize: 28.0),
                     ),
-                    const SizedBox(
-                      height: 11.0,
-                    ),
+                    const H(11),
                     Text(
                       Strings.job,
                       style: GoogleFonts.roboto(
                           fontWeight: FontWeight.normal,
-                          color: Color.fromARGB(255, 203, 52, 230),
+                          color: const Color.fromARGB(255, 203, 52, 230),
                           fontSize: 25.0),
                     ),
-                    const SizedBox(
-                      height: 10.0,
-                    ),
+                    const H(10),
                     SizedBox(
                       width: 500,
                       child: Text(
@@ -48,9 +46,7 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                             fontSize: 24.0),
                       ),
                     ),
-                    const SizedBox(
-                      height: 45.0,
-                    ),
+                    const H(45),
                     GestureDetector(
                       onTap: () {
                         Utilty.openUrl(Strings.githubPageURL);
@@ -67,44 +63,36 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                         ),
                       ),
                     ),
-                    const SizedBox(
-                      height: 25.0,
-                    ),
-                    Container(
-                      child: Row(
-                        children: [
-                          IconButton(
-                            icon: Image.asset(Strings.emailPhotoPath),
-                            iconSize: 40,
-                            onPressed: () {
-                              Utilty.openUrl(
-                                  'mailto:carlosfcoparra@hotmail.com');
-                            },
-                          ),
-                          SizedBox(
-                            width: 40.0,
-                          ),
-                          IconButton(
-                            icon: Image.asset(Strings.linkedinPhotoPath),
-                            iconSize: 40,
-                            onPressed: () {
-                              Utilty.openUrl(
-                                  'https://www.linkedin.com/in/carlos-francisco-parra-garc%C3%ADa-9b16941b5');
-                            },
-                          ),
-                          SizedBox(
-                            width: 40.0,
-                          ),
-                          IconButton(
-                            icon: Image.asset(Strings.githubPhotoPath),
-                            iconSize: 40,
-                            onPressed: () {
-                              Utilty.openUrl(
-                                  'https://github.com/carlosparra1998');
-                            },
-                          ),
-                        ],
-                      ),
+                    const H(25),
+                    Row(
+                      children: [
+                        IconButton(
+                          icon: Image.asset(Strings.emailPhotoPath),
+                          iconSize: 40,
+                          onPressed: () {
+                            Utilty.openUrl(
+                                'mailto:carlosfcoparra@hotmail.com');
+                          },
+                        ),
+                        const W(40),
+                        IconButton(
+                          icon: Image.asset(Strings.linkedinPhotoPath),
+                          iconSize: 40,
+                          onPressed: () {
+                            Utilty.openUrl(
+                                'https://www.linkedin.com/in/carlos-francisco-parra-garc%C3%ADa-9b16941b5');
+                          },
+                        ),
+                        const W(40),
+                        IconButton(
+                          icon: Image.asset(Strings.githubPhotoPath),
+                          iconSize: 40,
+                          onPressed: () {
+                            Utilty.openUrl(
+                                'https://github.com/carlosparra1998');
+                          },
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -118,8 +106,8 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
             child: Image.asset(
               Strings.myPhoto,
               fit: BoxFit.cover,
-              width: 300, // x2 (twice) the radius of CircleAvatar
-              height: 300, // x2 (twice) the radius of CircleAvatar
+              width: 300,
+              height: 300, 
             ),
           ),
         ),

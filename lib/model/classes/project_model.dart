@@ -1,7 +1,5 @@
 import 'package:my_portfolio/model/classes/technology.dart';
 
-import '../../utils/constants.dart';
-
 class ProjectModel {
   final String project;
   final String title;

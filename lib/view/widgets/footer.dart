@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:google_fonts/google_fonts.dart';
+// ignore_for_file: depend_on_referenced_packages
 
-import '../../model/classes/utility.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/widgets/h.dart';
+import 'package:my_portfolio/widgets/w.dart';
+
 import '../../model/repositories/cache.dart';
 import '../../utils/constants.dart';
 import '../../utils/screen_helper.dart';
@@ -67,9 +68,7 @@ Widget _buildUi(double width, BuildContext context) {
                                         color: kPrimaryColor,
                                         size: 28,
                                       ),
-                                      const SizedBox(
-                                        width: 15.0,
-                                      ),
+                                      const W(15),
                                       Text(
                                         footerItem.title,
                                         style: GoogleFonts.roboto(
@@ -80,9 +79,7 @@ Widget _buildUi(double width, BuildContext context) {
                                       ),
                                     ],
                                   ),
-                                  const SizedBox(
-                                    height: 10.0,
-                                  ),
+                                  const H(10),
                                   RichText(
                                     textAlign: TextAlign.start,
                                     text: TextSpan(
@@ -112,15 +109,13 @@ Widget _buildUi(double width, BuildContext context) {
                       .toList(),
                 ),
               ),
-              const SizedBox(
-                height: 20.0,
-              ),
+              const H(20),
               Flex(
                 direction: Axis.horizontal,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(bottom: 8.0),
+                    padding: const EdgeInsets.only(bottom: 8.0),
                     child: Text(
                       Strings.finalPhrase,
                       style: GoogleFonts.roboto(
