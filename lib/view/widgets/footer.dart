@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 import 'package:my_portfolio/widgets/h.dart';
 import 'package:my_portfolio/widgets/w.dart';
 
@@ -9,10 +10,6 @@ import '../../model/repositories/cache.dart';
 import '../../utils/constants.dart';
 import '../../utils/screen_helper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-
-import '../../utils/strings.dart';
-
-
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -117,7 +114,7 @@ Widget _buildUi(double width, BuildContext context) {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 8.0),
                     child: Text(
-                      Strings.finalPhrase,
+                      translate.finalPhrase,
                       style: GoogleFonts.roboto(
                         color: kCaptionColor,
                       ),

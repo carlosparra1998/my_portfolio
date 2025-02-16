@@ -2,13 +2,13 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 import 'package:my_portfolio/widgets/h.dart';
 
 import '../../model/classes/project_model.dart';
 import '../../model/classes/utility.dart';
 import '../../utils/constants.dart';
 import '../../utils/screen_helper.dart';
-import '../../utils/strings.dart';
 
 class ProjectSection extends StatelessWidget {
   final List<ProjectModel> projects;
@@ -25,12 +25,14 @@ class ProjectSection extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child: Row(
           children: projects
-              .map((e) => Container(
-                  margin: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 15,
-                  ),
-                  child: _buildProject(width, e)))
+              .map(
+                (e) => Container(
+                    margin: const EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 15,
+                    ),
+                    child: _buildProject(width, e)),
+              )
               .toList(),
         ),
       ),
@@ -117,7 +119,7 @@ Center _buildProject(double width, ProjectModel projectModel) {
                       projectModel.techUsed.isEmpty
                           ? Container()
                           : Text(
-                              Strings.techUsed,
+                              translate.tech,
                               style: GoogleFonts.roboto(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w900,
@@ -154,7 +156,8 @@ Center _buildProject(double width, ProjectModel projectModel) {
                                 },
                                 child: Center(
                                   child: Text(
-                                    (projectModel.buttonText ?? "Explore MORE")
+                                    (projectModel.buttonText ??
+                                            translate.exploreMore)
                                         .toUpperCase(),
                                     style: GoogleFonts.roboto(
                                       color: Colors.black,

@@ -4,6 +4,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 import 'package:my_portfolio/utils/screen_helper.dart';
 import 'package:my_portfolio/widgets/h.dart';
 import 'package:my_portfolio/widgets/w.dart';
@@ -11,7 +12,6 @@ import 'package:responsive_framework/responsive_framework.dart';
 
 import '../../model/repositories/cache.dart';
 import '../../utils/constants.dart';
-import '../../utils/strings.dart';
 
 class AboutSection extends StatefulWidget {
   const AboutSection({Key? key}) : super(key: key);
@@ -49,7 +49,7 @@ class _AboutSectionState extends State<AboutSection> {
                     children: [
                       const H(15),
                       Text(
-                        Strings.aboutMe,
+                        translate.aboutMe,
                         style: GoogleFonts.roboto(
                           fontWeight: FontWeight.bold,
                           color: const Color.fromARGB(255, 62, 190, 66),
@@ -58,7 +58,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       const H(18),
                       Text(
-                        Strings.description,
+                        translate.description,
                         style: GoogleFonts.roboto(
                           fontWeight: FontWeight.normal,
                           color: const Color.fromARGB(255, 173, 172, 172),
@@ -67,7 +67,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       const H(50),
                       Text(
-                        Strings.tech,
+                        translate.tech,
                         style: GoogleFonts.roboto(
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 252, 252, 252),
@@ -75,7 +75,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       const H(18),
                       Text(
-                        Strings.mobileDev,
+                        translate.mobileDev,
                         style: GoogleFonts.roboto(
                             fontWeight: FontWeight.bold,
                             color: Color.fromARGB(255, 173, 172, 172),
@@ -137,7 +137,7 @@ class _AboutSectionState extends State<AboutSection> {
                       ),
                       const H(25),
                       Text(
-                        Strings.otherTech,
+                        translate.otherTech,
                         style: GoogleFonts.roboto(
                           fontWeight: FontWeight.bold,
                           color: const Color.fromARGB(255, 173, 172, 172),

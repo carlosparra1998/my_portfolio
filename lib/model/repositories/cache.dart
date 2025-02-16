@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 
 import '../../utils/constants.dart';
-import '../../utils/strings.dart';
 import '../../view/widgets/footer.dart';
 import '../classes/project_model.dart';
 import '../classes/stat.dart';
@@ -10,129 +10,112 @@ import '../classes/utility.dart';
 
 List<ProjectModel> projects = [
   ProjectModel(
-    project: "Flutter App",
-    title: "My Personal Tasks",
-    description:
-        "Aplicación desarrollada en Flutter para la gestión de tareas del usuario. El patrón de diseño seguido ha sido Model View View-Model (MVVM), en la cual hemos incorporado la funcionalidad de Provider para manejar los estados de la app.",
+    project: translate.appFlutter,
+    title: translate.myPersonalTasksTitleProject,
+    description: translate.myPersonalTasksDescriptionProject,
     appPhotos: AppConstants.project5,
-    projectLink: "https://github.com/carlosparra1998/my_personal_tasks",
+    projectLink: AppConstants.myPersonalTasksUrl,
     techUsed: [
       TechnologyConstants.flutter,
       TechnologyConstants.dart,
       TechnologyConstants.git
     ],
-    buttonText: "VER GITHUB",
+    buttonText: translate.seeGithub,
   ),
   ProjectModel(
-    project: "Flutter App",
-    title: "Wembley Studios Movies",
-    description:
-        "Aplicación desarrollada en Flutter para la gestión de películas favoritas de los empleados de Wembley Studios. El patrón de diseño seguido ha sido Model View View-Model (MVVM), en la cual hemos incorporado la funcionalidad de Provider para manejar los estados de la app.",
+    project: translate.appFlutter,
+    title: translate.wsTitleProject,
+    description: translate.wsDescriptionProject,
     appPhotos: AppConstants.project4,
-    projectLink: "https://github.com/carlosparra1998/WembleyStudiosMovies",
+    projectLink: AppConstants.wsUrl,
     techUsed: [
       TechnologyConstants.flutter,
       TechnologyConstants.dart,
       TechnologyConstants.git
     ],
-    buttonText: "VER GITHUB",
+    buttonText: translate.seeGithub,
   ),
   ProjectModel(
-    project: "Flutter App",
-    title: "FaceAccess Client",
-    description:
-        "Esta es la implementación de la aplicación móvil del cliente, correspondiente al sistema FaceAccess.",
+    project: translate.appFlutter,
+    title: translate.faClientTitleProject,
+    description: translate.faClientDescriptionProject,
     appPhotos: AppConstants.project2,
-    projectLink: "https://github.com/carlosparra1998/FACEACCESS_CLIENT",
+    projectLink: AppConstants.faClientUrl,
     techUsed: [
       TechnologyConstants.flutter,
       TechnologyConstants.dart,
       TechnologyConstants.tensorflow,
       TechnologyConstants.mqtt
     ],
-    buttonText: "VER GITHUB",
+    buttonText: translate.seeGithub,
   ),
   ProjectModel(
-    project: "Flutter App",
-    title: "FaceAccess Employee",
-    description:
-        "Esta es la implementación de la aplicación móvil del empleado, correspondiente al sistema FaceAccess.",
+    project: translate.appFlutter,
+    title: translate.faEmployeeTitleProject,
+    description: translate.faEmployeeDescriptionProject,
     appPhotos: AppConstants.project3,
-    projectLink: "https://github.com/carlosparra1998/FACEACCESS_EMPLOYEE",
+    projectLink: AppConstants.faEmployeeUrl,
     techUsed: [
       TechnologyConstants.flutter,
       TechnologyConstants.dart,
       TechnologyConstants.mqtt
     ],
-    buttonText: "VER GITHUB",
+    buttonText: translate.seeGithub,
   ),
   ProjectModel(
-    project: "Python Deploy",
-    title: "FaceAccess Server",
-    description:
-        "Este proyecto corresponde con el backend del servicio para el funcionamiento del sistema de control de acceso FaceAccess.",
+    project: translate.appPython,
+    title: translate.faServerTitleProject,
+    description: translate.faServerDescriptionProject,
     appPhotos: AppConstants.project1,
-    projectLink: "https://github.com/carlosparra1998/FACEACCESS_SERVER",
+    projectLink: AppConstants.faServerUrl,
     techUsed: [
       TechnologyConstants.linux,
       TechnologyConstants.psql,
       TechnologyConstants.python,
       TechnologyConstants.mqtt
     ],
-    buttonText: "Github Link",
-  ),
-];
-
-List<ProjectModel> demos = [
-  ProjectModel(
-    project: "Flutter App",
-    title: "Flutter Web Portfolio",
-    description: "",
-    appPhotos: AppConstants.portfolioGif,
-    projectLink: "https://github.com/AgnelSelvan/Flutter-Web-Portfolio",
-    techUsed: [],
-    buttonText: "VER GITHUB",
+    buttonText: translate.seeGithub,
   ),
 ];
 
 final List<Stat> stats = [
-  Stat(count: "3", text: "Proyectos"),
-  Stat(count: "1", text: "Premio"),
-  Stat(count: "2", text: "Años\nExperiencia"),
+  Stat(count: "3", text: translate.projects),
+  Stat(count: "1", text: translate.awards),
+  Stat(count: "2", text: translate.experienceInYears),
 ];
 
 final List<FooterItem> footerItems = [
   FooterItem(
       iconData: Icons.location_on,
-      title: Strings.address,
-      text1: Strings.getAddress,
-      text2: Strings.getCountry,
+      title: translate.address,
+      text1: AppConstants.getAddress,
+      text2: translate.getCountry,
       onTap: () {
-        Utilty.openUrl('https://goo.gl/maps/qLo3w9XR5NxCNDmL8');
+        Utilty.openUrl(AppConstants.location);
       }),
   FooterItem(
       iconData: Icons.phone,
-      title: Strings.phone,
-      text1: Strings.getCallPhone,
+      title: translate.phone,
+      text1: AppConstants.getCallPhone,
       text2: "",
       onTap: () {
-        Utilty.openUrl("tel:+34-644912060");
+        Utilty.openUrl(AppConstants.phone);
       }),
   FooterItem(
       iconData: Icons.mail,
-      title: Strings.email,
-      text1: Strings.getEmail,
+      title: translate.email,
+      text1: AppConstants.getEmail,
       text2: "",
       onTap: () {
-        Utilty.openUrl('mailto:carlosfcoparra@hotmail.com');
+        Utilty.openUrl(AppConstants.mailTo);
       }),
   FooterItem(
       iconData: Icons.sms,
-      title: Strings.whatsapp,
-      text1: Strings.getWhatsapp,
+      title: translate.whatsapp,
+      text1: AppConstants.getWhatsapp,
       text2: "",
       onTap: () {
-        Utilty.openUrl('https://wa.me/627143691');
+        Utilty.openUrl(AppConstants.waMe);
       })
 ];
 

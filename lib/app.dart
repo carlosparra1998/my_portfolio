@@ -2,8 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart' as arb;
 
-import 'utils/strings.dart';
+import 'utils/global_resources.dart';
 import 'view/screens/home_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: globalKey,
       builder: (context, widget) => ResponsiveWrapper.builder(
         ClampingScrollWrapper.builder(context, widget ?? Container()),
         defaultScale: true,
@@ -25,7 +27,12 @@ class MyApp extends StatelessWidget {
           color: const Color.fromRGBO(7, 17, 26, 1),
         ),
       ),
-      title: Strings.namePage,
+      locale: null,
+      supportedLocales: arb.AppLocalizations.supportedLocales,
+      localizationsDelegates: const [
+        ...arb.AppLocalizations.localizationsDelegates,
+      ],
+      title: translate.namePage,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.black,

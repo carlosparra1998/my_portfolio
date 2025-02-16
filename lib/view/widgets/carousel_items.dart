@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 import 'package:my_portfolio/widgets/h.dart';
 import 'package:my_portfolio/widgets/w.dart';
 import '../../model/classes/carousel_item_model.dart';
 import '../../model/classes/utility.dart';
 import '../../utils/constants.dart';
-import '../../utils/strings.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
@@ -21,40 +21,43 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      Strings.completeName,
-                      style: GoogleFonts.roboto( 
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                          fontSize: 28.0),
+                      translate.completeName,
+                      style: GoogleFonts.roboto(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 28.0,
+                      ),
                     ),
                     const H(11),
                     Text(
-                      Strings.job,
+                      translate.job,
                       style: GoogleFonts.roboto(
-                          fontWeight: FontWeight.normal,
-                          color: const Color.fromARGB(255, 203, 52, 230),
-                          fontSize: 25.0),
+                        fontWeight: FontWeight.normal,
+                        color: const Color.fromARGB(255, 203, 52, 230),
+                        fontSize: 25.0,
+                      ),
                     ),
                     const H(10),
                     SizedBox(
                       width: 500,
                       child: Text(
-                        Strings.phrase,
+                        translate.phrase,
                         style: GoogleFonts.roboto(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey,
-                            fontSize: 24.0),
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                          fontSize: 24.0,
+                        ),
                       ),
                     ),
                     const H(45),
                     GestureDetector(
                       onTap: () {
-                        Utilty.openUrl(Strings.githubPageURL);
+                        Utilty.openUrl(AppConstants.githubPageURL);
                       },
                       child: MouseRegion(
                         cursor: SystemMouseCursors.click,
                         child: Text(
-                          Strings.download,
+                          translate.download,
                           style: GoogleFonts.roboto(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -67,29 +70,26 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                     Row(
                       children: [
                         IconButton(
-                          icon: Image.asset(Strings.emailPhotoPath),
+                          icon: Image.asset(AppConstants.emailPhotoPath),
                           iconSize: 40,
                           onPressed: () {
-                            Utilty.openUrl(
-                                'mailto:carlosfcoparra@hotmail.com');
+                            Utilty.openUrl(AppConstants.mailTo);
                           },
                         ),
                         const W(40),
                         IconButton(
-                          icon: Image.asset(Strings.linkedinPhotoPath),
+                          icon: Image.asset(AppConstants.linkedinPhotoPath),
                           iconSize: 40,
                           onPressed: () {
-                            Utilty.openUrl(
-                                'https://www.linkedin.com/in/carlos-francisco-parra-garc%C3%ADa-9b16941b5');
+                            Utilty.openUrl(AppConstants.linkedinURL);
                           },
                         ),
                         const W(40),
                         IconButton(
-                          icon: Image.asset(Strings.githubPhotoPath),
+                          icon: Image.asset(AppConstants.githubPhotoPath),
                           iconSize: 40,
                           onPressed: () {
-                            Utilty.openUrl(
-                                'https://github.com/carlosparra1998');
+                            Utilty.openUrl(AppConstants.githubMainURL);
                           },
                         ),
                       ],
@@ -104,10 +104,10 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
           radius: 150,
           child: ClipOval(
             child: Image.asset(
-              Strings.myPhoto,
+              AppConstants.myPhoto,
               fit: BoxFit.cover,
               width: 300,
-              height: 300, 
+              height: 300,
             ),
           ),
         ),

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/model/repositories/cache.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 import 'package:my_portfolio/view/widgets/project_section.dart';
 import 'package:my_portfolio/widgets/h.dart';
-
-import '../../utils/strings.dart';
 
 class Portfolio extends StatelessWidget {
   const Portfolio({super.key});
@@ -17,7 +16,7 @@ class Portfolio extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            Strings.portfolio,
+            translate.portfolio,
             style: GoogleFonts.roboto(
                 fontWeight: FontWeight.bold,
                 color: const Color.fromARGB(255, 62, 190, 66),
@@ -25,7 +24,7 @@ class Portfolio extends StatelessWidget {
           ),
           const H(10),
           Text(
-            Strings.workShow,
+            translate.workShow,
             style: GoogleFonts.roboto(
               color: Colors.grey[400],
               fontSize: 19,

@@ -1,16 +1,15 @@
 // ignore_for_file: depend_on_referenced_packages
 
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/model/classes/utility.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 import 'package:my_portfolio/utils/screen_helper.dart';
 import 'package:my_portfolio/widgets/h.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 import '../../utils/constants.dart';
-import '../../utils/strings.dart';
 
 class Awards extends StatefulWidget {
   const Awards({Key? key}) : super(key: key);
@@ -50,7 +49,7 @@ class _Awards extends State<Awards> {
                         height: 15.0,
                       ),
                       Text(
-                        Strings.awards,
+                        translate.awards,
                         style: GoogleFonts.roboto(
                           fontWeight: FontWeight.bold,
                           color: const Color.fromARGB(255, 62, 190, 66),
@@ -62,8 +61,7 @@ class _Awards extends State<Awards> {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text:
-                                  "Trabajo Fin de Grado (TFG) más innovador 2021-2022 de la Fundación Campollano",
+                              text: translate.tfgAwardTitle,
                               style: GoogleFonts.roboto(
                                 decoration: TextDecoration.underline,
                                 fontWeight: FontWeight.bold,
@@ -72,8 +70,7 @@ class _Awards extends State<Awards> {
                               ),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () async {
-                                  Utilty.openUrl(
-                                      "https://www.uclm.es/es/noticias/noticias2022/octubre/albacete/premios_fcampollano");
+                                  Utilty.openUrl(AppConstants.tfgAwardURL);
                                 },
                             ),
                           ],
