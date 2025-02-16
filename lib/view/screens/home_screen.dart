@@ -89,8 +89,9 @@ class _HomePageState extends State<HomePage> {
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 10, vertical: 0),
                                           child: DropdownButton<String>(
-                                            value:
-                                                language.getLanguage().languageCode,
+                                            value: language
+                                                .getLanguage()
+                                                .languageCode,
                                             dropdownColor: Colors.grey,
                                             underline: const SizedBox(),
                                             borderRadius:
@@ -126,7 +127,8 @@ class _HomePageState extends State<HomePage> {
                                             onChanged: (code) {
                                               context
                                                   .read<LanguageProvider>()
-                                                  .changeLanguage(Locale(code ?? 'en'));
+                                                  .changeLanguage(
+                                                      Locale(code ?? 'en'));
                                             },
                                           ),
                                         ),
@@ -135,18 +137,18 @@ class _HomePageState extends State<HomePage> {
                                   ],
                                 ),
                                 MainPresentation(),
-                                const AboutSection(),
+                                AboutSection(),
                                 const H(90),
-                                const Awards(),
+                                Awards(),
                                 const H(120),
-                                const Portfolio(),
+                                Portfolio(),
                                 const H(20),
-                                const Padding(
+                                Padding(
                                   padding: EdgeInsets.symmetric(vertical: 28.0),
                                   child: ShowStats(),
                                 ),
                                 const H(20),
-                                const Footer()
+                                Footer()
                               ],
                             ),
                           ),

@@ -16,9 +16,9 @@ class LanguageProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void changeLanguage(Locale locale) {
+  void changeLanguage(Locale locale) async{
     _language = locale;
-    setString('language', locale.languageCode);
+    await setString('language', locale.languageCode);
     notifyListeners();
   }
 }

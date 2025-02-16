@@ -8,7 +8,7 @@ import '../classes/stat.dart';
 import '../classes/technology.dart';
 import '../classes/utility.dart';
 
-List<ProjectModel> projects = [
+List<ProjectModel> get projects => [
   ProjectModel(
     project: translate.appFlutter,
     title: translate.taller29FrontTitleProject,
@@ -104,13 +104,13 @@ List<ProjectModel> projects = [
   ),
 ];
 
-final List<Stat> stats = [
+ List<Stat> get stats => [
   Stat(count: "7", text: translate.projects),
   Stat(count: "1", text: translate.awards),
   Stat(count: "3", text: translate.experienceInYears),
 ];
 
-final List<FooterItem> footerItems = [
+List<FooterItem> get footerItems => [
   FooterItem(
       iconData: Icons.location_on,
       title: translate.address,
