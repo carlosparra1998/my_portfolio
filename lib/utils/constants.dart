@@ -73,28 +73,39 @@ class AppConstants {
   static String linkedinPhotoPath = 'assets/images/social/linkedin-logo.png';
   static String githubPhotoPath = 'assets/images/social/github.png';
   static String githubMainURL = 'https://github.com/carlosparra1998';
-  static String githubPageURL =
-      "https://github.com/carlosparra1998/carlosparra1998.github.io/raw/main/docs/CV.pdf";
+  static String spanishCVURL =
+      "https://github.com/carlosparra1998/carlosparra1998.github.io/raw/main/docs/SPANISH_CV_CARLOS_FRANCISCO_PARRA_GARCIA.pdf";
+  static String englishCVURL =
+      "https://github.com/carlosparra1998/carlosparra1998.github.io/raw/main/docs/ENGLISH_CV_CARLOS_FRANCISCO_PARRA_GARCIA.pdf";
   static String getAddress = "Murcia, Murcia";
   static String getCallPhone = "+34 644912060";
   static String getEmail = "carlosfcoparra@hotmail.com";
   static String getWhatsapp = "+34 644912060";
-  static String linkedinURL = 'https://www.linkedin.com/in/carlos-francisco-parra-garc%C3%ADa-9b16941b5';
+  static String linkedinURL =
+      'https://www.linkedin.com/in/carlos-francisco-parra-garc%C3%ADa-9b16941b5';
   static String mailTo = 'mailto:carlosfcoparra@hotmail.com';
 
-  static String tfgAwardURL = "https://www.uclm.es/es/noticias/noticias2022/octubre/albacete/premios_fcampollano";
+  static String tfgAwardURL =
+      "https://www.uclm.es/es/noticias/noticias2022/octubre/albacete/premios_fcampollano";
 
-  static String myPersonalTasksUrl = 'https://github.com/carlosparra1998/my_personal_tasks';
-  static String tallerFrontUrl = 'https://github.com/carlosparra1998/taller-flutter-29-mayo-front-FINAL';
-  static String tallerBackUrl = 'https://github.com/carlosparra1998/taller-flutter-29-mayo-back';
+  static String myPersonalTasksUrl =
+      'https://github.com/carlosparra1998/my_personal_tasks';
+  static String tallerFrontUrl =
+      'https://github.com/carlosparra1998/taller-flutter-29-mayo-front-FINAL';
+  static String tallerBackUrl =
+      'https://github.com/carlosparra1998/taller-flutter-29-mayo-back';
 
-  static String wsUrl = "https://github.com/carlosparra1998/WembleyStudiosMovies";
+  static String wsUrl =
+      "https://github.com/carlosparra1998/WembleyStudiosMovies";
 
-  static String faClientUrl = "https://github.com/carlosparra1998/FACEACCESS_CLIENT";
+  static String faClientUrl =
+      "https://github.com/carlosparra1998/FACEACCESS_CLIENT";
 
-  static String faEmployeeUrl = "https://github.com/carlosparra1998/FACEACCESS_EMPLOYEE";
+  static String faEmployeeUrl =
+      "https://github.com/carlosparra1998/FACEACCESS_EMPLOYEE";
 
-  static String faServerUrl =  "https://github.com/carlosparra1998/FACEACCESS_SERVER";
+  static String faServerUrl =
+      "https://github.com/carlosparra1998/FACEACCESS_SERVER";
 
   static String waMe = 'https://wa.me/644912060';
 

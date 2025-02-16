@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/providers/language_provider.dart';
 import 'package:my_portfolio/utils/global_resources.dart';
 import 'package:my_portfolio/widgets/h.dart';
 import 'package:my_portfolio/widgets/w.dart';
@@ -6,6 +7,7 @@ import '../../model/classes/carousel_item_model.dart';
 import '../../model/classes/utility.dart';
 import '../../utils/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
       5,
@@ -51,7 +53,9 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                     const H(45),
                     GestureDetector(
                       onTap: () {
-                        Utilty.openUrl(AppConstants.githubPageURL);
+                        Utilty.openUrl(
+                          globalContext.read<LanguageProvider>().getCV(),
+                        );
                       },
                       child: MouseRegion(
                         cursor: SystemMouseCursors.click,

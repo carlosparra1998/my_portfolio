@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/l10n/L10n.dart';
+import 'package:my_portfolio/utils/constants.dart';
 import 'package:my_portfolio/utils/global_resources.dart';
 
 class LanguageProvider with ChangeNotifier {
@@ -16,9 +17,15 @@ class LanguageProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void changeLanguage(Locale locale) async{
+  void changeLanguage(Locale locale) async {
     _language = locale;
     await setString('language', locale.languageCode);
     notifyListeners();
+  }
+
+  String getCV() {
+    return _language.languageCode.toLowerCase() == 'es'
+        ? AppConstants.spanishCVURL
+        : AppConstants.englishCVURL;
   }
 }
