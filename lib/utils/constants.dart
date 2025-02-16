@@ -85,6 +85,8 @@ class AppConstants {
   static String tfgAwardURL = "https://www.uclm.es/es/noticias/noticias2022/octubre/albacete/premios_fcampollano";
 
   static String myPersonalTasksUrl = 'https://github.com/carlosparra1998/my_personal_tasks';
+  static String tallerFrontUrl = 'https://github.com/carlosparra1998/taller-flutter-29-mayo-front-FINAL';
+  static String tallerBackUrl = 'https://github.com/carlosparra1998/taller-flutter-29-mayo-back';
 
   static String wsUrl = "https://github.com/carlosparra1998/WembleyStudiosMovies";
 
