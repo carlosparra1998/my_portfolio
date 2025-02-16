@@ -59,6 +59,7 @@ class AppConstants {
   static const project3 = "${_projectsImages}employee.png";
   static const project4 = "${_projectsImages}appmovies.png";
   static const project5 = "${_projectsImages}apptasks.png";
+  static const project6 = "${_projectsImages}ceeim.jpg";
 
   static const musicLabImage = "${_projectsImages}4.jpeg";
   static const personalFaceImage = "${_projectsImages}5.jpeg";
@@ -74,10 +75,10 @@ class AppConstants {
   static String githubMainURL = 'https://github.com/carlosparra1998';
   static String githubPageURL =
       "https://github.com/carlosparra1998/carlosparra1998.github.io/raw/main/docs/CV.pdf";
-  static String getAddress = "Albacete, Albacete";
+  static String getAddress = "Murcia, Murcia";
   static String getCallPhone = "+34 644912060";
   static String getEmail = "carlosfcoparra@hotmail.com";
-  static String getWhatsapp = "+34 627143691";
+  static String getWhatsapp = "+34 644912060";
   static String linkedinURL = 'https://www.linkedin.com/in/carlos-francisco-parra-garc%C3%ADa-9b16941b5';
   static String mailTo = 'mailto:carlosfcoparra@hotmail.com';
 

@@ -1,5 +1,6 @@
 import 'package:flag/flag.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 
 class L10n {
   static final all = [
@@ -15,9 +16,9 @@ class L10n {
   static String getLanguageName(String code) {
     switch (code) {
       case 'es':
-        return 'translate.spanish';
+        return translate.spanish;
       default:
-        return 'translate.english';
+        return translate.english;
     }
   }
 

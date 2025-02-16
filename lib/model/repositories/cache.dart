@@ -11,6 +11,32 @@ import '../classes/utility.dart';
 List<ProjectModel> projects = [
   ProjectModel(
     project: translate.appFlutter,
+    title: translate.taller29FrontTitleProject,
+    description: translate.taller29FrontDescriptionProject,
+    appPhotos: AppConstants.project6,
+    projectLink: AppConstants.myPersonalTasksUrl,
+    techUsed: [
+      TechnologyConstants.flutter,
+      TechnologyConstants.dart,
+      TechnologyConstants.git
+    ],
+    buttonText: translate.seeGithub,
+  ),
+  ProjectModel(
+    project: translate.appPython,
+    title: translate.taller29BackTitleProject,
+    description: translate.taller29BackDescriptionProject,
+    appPhotos: AppConstants.project6,
+    projectLink: AppConstants.myPersonalTasksUrl,
+    techUsed: [
+      TechnologyConstants.python,
+      TechnologyConstants.fastapi,
+      TechnologyConstants.git
+    ],
+    buttonText: translate.seeGithub,
+  ),
+  ProjectModel(
+    project: translate.appFlutter,
     title: translate.myPersonalTasksTitleProject,
     description: translate.myPersonalTasksDescriptionProject,
     appPhotos: AppConstants.project5,
@@ -79,9 +105,9 @@ List<ProjectModel> projects = [
 ];
 
 final List<Stat> stats = [
-  Stat(count: "3", text: translate.projects),
+  Stat(count: "7", text: translate.projects),
   Stat(count: "1", text: translate.awards),
-  Stat(count: "2", text: translate.experienceInYears),
+  Stat(count: "3", text: translate.experienceInYears),
 ];
 
 final List<FooterItem> footerItems = [

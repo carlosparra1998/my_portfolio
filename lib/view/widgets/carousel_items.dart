@@ -25,16 +25,16 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                       style: GoogleFonts.roboto(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
-                        fontSize: 28.0,
+                        fontSize: 30.0,
                       ),
                     ),
                     const H(11),
                     Text(
                       translate.job,
                       style: GoogleFonts.roboto(
-                        fontWeight: FontWeight.normal,
                         color: const Color.fromARGB(255, 203, 52, 230),
-                        fontSize: 25.0,
+                        fontSize: 22.0,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                     const H(10),
@@ -43,9 +43,8 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                       child: Text(
                         translate.phrase,
                         style: GoogleFonts.roboto(
-                          fontWeight: FontWeight.bold,
                           color: Colors.grey,
-                          fontSize: 24.0,
+                          fontSize: 20.0,
                         ),
                       ),
                     ),
