@@ -4,8 +4,8 @@ import 'package:my_portfolio/utils/global_resources.dart';
 
 class L10n {
   static final all = [
-    const Locale('es'),
     const Locale('en'),
+    const Locale('es'),
   ];
 
   static final flags = List.generate(

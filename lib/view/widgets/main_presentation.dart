@@ -1,14 +1,14 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_slider.dart' as c;
 import '../../utils/constants.dart';
 import '../../utils/screen_helper.dart';
 import 'carousel_items.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class MainPresentation extends StatelessWidget {
-  final CarouselController carouselController = CarouselController();
+  final c.CarouselSliderController carouselController = c.CarouselSliderController();
 
   MainPresentation({super.key});
   @override
@@ -19,9 +19,9 @@ class MainPresentation extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
           Container(
             alignment: Alignment.center,
-            child: CarouselSlider(
+            child: c.CarouselSlider(
               carouselController: carouselController,
-              options: CarouselOptions(
+              options: c.CarouselOptions(
                 viewportFraction: 1,
                 scrollPhysics: const NeverScrollableScrollPhysics(),
                 height: carouselContainerHeight(context),

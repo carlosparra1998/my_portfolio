@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/l10n/L10n.dart';
 import 'package:my_portfolio/providers/language_provider.dart';
+import 'package:my_portfolio/utils/global_resources.dart';
 import 'package:my_portfolio/widgets/h.dart';
 import 'package:my_portfolio/widgets/w.dart';
 import 'package:provider/provider.dart';
@@ -89,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                                               horizontal: 10, vertical: 0),
                                           child: DropdownButton<String>(
                                             value:
-                                                language.language.languageCode,
+                                                language.getLanguage().languageCode,
                                             dropdownColor: Colors.grey,
                                             underline: const SizedBox(),
                                             borderRadius:
@@ -125,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                                             onChanged: (code) {
                                               context
                                                   .read<LanguageProvider>()
-                                                  .changeLanguage(code ?? 'en');
+                                                  .changeLanguage(Locale(code ?? 'en'));
                                             },
                                           ),
                                         ),
