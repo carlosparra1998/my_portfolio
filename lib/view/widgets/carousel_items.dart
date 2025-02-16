@@ -70,7 +70,7 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                       children: [
                         IconButton(
                           icon: Image.asset(AppConstants.emailPhotoPath),
-                          iconSize: 40,
+                          iconSize: 10,
                           onPressed: () {
                             Utilty.openUrl(AppConstants.mailTo);
                           },
@@ -78,7 +78,7 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                         const W(40),
                         IconButton(
                           icon: Image.asset(AppConstants.linkedinPhotoPath),
-                          iconSize: 40,
+                          iconSize: 10,
                           onPressed: () {
                             Utilty.openUrl(AppConstants.linkedinURL);
                           },
@@ -86,7 +86,7 @@ List<dynamic> carouselItems(double carouselContainerHeight) => List.generate(
                         const W(40),
                         IconButton(
                           icon: Image.asset(AppConstants.githubPhotoPath),
-                          iconSize: 40,
+                          iconSize: 10,
                           onPressed: () {
                             Utilty.openUrl(AppConstants.githubMainURL);
                           },
