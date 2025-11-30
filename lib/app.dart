@@ -2,9 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:my_portfolio/l10n/L10n.dart';
+import 'package:my_portfolio/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart' as arb;
 
 import 'providers/language_provider.dart';
 import 'utils/global_resources.dart';
@@ -32,10 +33,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
         locale: provider.getLanguage(),
-        supportedLocales: arb.AppLocalizations.supportedLocales,
-        localizationsDelegates: const [
-          ...arb.AppLocalizations.localizationsDelegates,
-        ],
+        supportedLocales: L10n.all,
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
         title: 'Carlos Parra Portfolio',
         theme: ThemeData(
           primarySwatch: Colors.blue,
