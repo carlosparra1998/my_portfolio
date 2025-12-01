@@ -38,7 +38,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get description =>
-      'Nací en la ciudad de Albacete, en donde obtuve mi título de Ingeniero Informático en la Universidad de Castilla-La Mancha en 2022. En ella fui galardonado con el premio al Trabajo de Fin de Grado más innovador por parte de la Fundación Campollano (2022). \n\nActualmente soy desarrollador senior frontend en Entelgy. En mi labor diaria me enfoco principalmente en el diseño y desarrollo de una aplicación web para un cliente potencial empleando el framework Flutter. En ella se incluye el desarrollo integral de la lógica de negocio y de las diferentes interfaces de usuario aplicando técnicas de diseño responsive. Para la comunicación API se emplea DIO para gestionar adecuadamente el middleware. Implementación de una arquitectura limpia con MVVM, aplicando principios de Clean Code paragarantizar un código escalable, mantenible y modular. Gestión del estado y de la reactividad empleando Provider. En dicho proyecto se trabaja en un entorno Agile (Scrum), utilizando JIRA para la gestión del mismo. Empleo de GitFlow en GitHub para el controlde versiones.';
+      'Nací en la ciudad de Albacete, en donde obtuve mi título de Ingeniero Informático en la Universidad de Castilla-La Mancha en 2022. En ella fui galardonado con el premio al Trabajo de Fin de Grado más innovador por parte de la Fundación Campollano (2022). \n\nProfesional en desarrollo front-end desde 2020, especializado en Flutter y el ecosistema Android/iOS. Tengo amplia experiencia utilizando lenguajes de programación como Dart y Kotlin, y aplico de manera constante los principios de Clean Code y arquitecturas escalables como MVVM y Clean Architecture. También domino distintos niveles de pruebas en Flutter, incluyendo tests unitarios, de widgets e integración, garantizando la calidad y estabilidad de las aplicaciones que desarrollo. En mi trabajo diario como desarrollador front-end senior, diseño y desarrollo aplicaciones móviles y web de alto rendimiento, utilizando soluciones de gestión de estado como Provider, BLoC y Cubit, así como otras prácticas avanzadas en el desarrollo moderno con Flutter. También he contribuido al ecosistema de código abierto desarrollando paquetes publicados en pub.dev. Además de mi labor como desarrollador front-end, soy fundador y organizador de Flutter Murcia, una comunidad local creada para compartir conocimiento y conectar a desarrolladores de la región interesados en Flutter. He participado como ponente en eventos como #FlutterInProductionExtended organizado por Flutter Málaga, y en el taller “Aprende a usar Flutter y crea aplicaciones multiplataforma”, organizado por CEEIM y MurciaDev.';
 
   @override
   String get tech => 'Tecnologías utilizadas';
@@ -138,11 +138,41 @@ class AppLocalizationsEs extends AppLocalizations {
       'Proyecto final (parte backend) correspondiente al taller de Flutter impartido por mí en el Centro de Empresas e Innovación de Murcia el día 29/05/2024. En este proyecto se ha desarrollado todo lo necesario para la comunicación API y persistencia en BBDD de los TODOs.';
 
   @override
-  String get seeGithub => 'VER GITHUB';
+  String get seeGithub => 'VER EN GITHUB';
+
+  @override
+  String get seeGooglePlay => 'VER EN GOOGLE PLAY';
+
+  @override
+  String get seePubDev => 'VER EN PUB.DEV';
+
+  @override
+  String get flutterLibrary => 'Librería Flutter - Pub.dev';
 
   @override
   String get projects => 'Proyectos';
 
   @override
   String get experienceInYears => 'Años\nExperiencia';
+
+  @override
+  String get fluencyPath => 'Fluency Path';
+
+  @override
+  String get flutterFullLayout => 'Flutter Full Layout';
+
+  @override
+  String get deepObserver => 'Deep Observer';
+
+  @override
+  String get fluencyPathDesc =>
+      'Con nuestra aplicación, podrás preparar con éxito tu examen de certificación de Inglés de una forma sencilla y eficaz. En ella podrás encontrar ejercicios de diferentes estilos.';
+
+  @override
+  String get deepObserverDesc =>
+      'Biblioteca que permite una gestión simple y eficiente de la reactividad de la aplicación en Flutter.';
+
+  @override
+  String get flutterFullLayoutDesc =>
+      'CLI para generar un proyecto Flutter completo con ARQUITECTURA LIMPIA. Permitirá al desarrollador crear un proyecto base con ARQUITECTURA LIMPIA. En esta arquitectura, utilizamos servicios (Cubits) para cada caso de uso. Estos servicios se comunicarán con repositorios (para cada caso de uso), y estos repositorios se comunicarán con el cliente DIO (HTTP).';
 }

@@ -60,6 +60,9 @@ class AppConstants {
   static const project4 = "${_projectsImages}appmovies.png";
   static const project5 = "${_projectsImages}apptasks.png";
   static const project6 = "${_projectsImages}ceeim.jpg";
+  static const projectFluencyPath = "${_projectsImages}fluencyPath.png";
+  static const projectDeepObserver = "${_projectsImages}deepObserver.png";
+  static const projectFlutterFullLayout = "${_projectsImages}flutterFullLayout.png";
 
   static const musicLabImage = "${_projectsImages}4.jpeg";
   static const personalFaceImage = "${_projectsImages}5.jpeg";
@@ -94,7 +97,10 @@ class AppConstants {
       'https://github.com/carlosparra1998/taller-flutter-29-mayo-front-FINAL';
   static String tallerBackUrl =
       'https://github.com/carlosparra1998/taller-flutter-29-mayo-back';
-
+  static String fluencyPath =
+      'https://play.google.com/store/apps/details?id=es.parra.developments.fluent_path&pcampaignid=web_share';
+  static String deepObserver = "https://pub.dev/packages/deep_observer";
+  static String flutterFullLayout = "https://pub.dev/packages/flutter_full_layout";
   static String wsUrl =
       "https://github.com/carlosparra1998/WembleyStudiosMovies";
 

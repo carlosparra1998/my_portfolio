@@ -155,7 +155,7 @@ abstract class AppLocalizations {
   /// No description provided for @description.
   ///
   /// In en, this message translates to:
-  /// **'I was born in the city of Albacete, where I obtained my degree in Computer Engineering at the University of Castilla-La Mancha in 2022. There I was awarded with the prize for the most innovative Final Degree Project by the Campollano Foundation (2022). \n\nI am currently a senior frontend developer at Entelgy. In my daily work I focus mainly on the design and development of a web application for a potential client using the Flutter framework. It includes the integral development of the business logic and the different user interfaces applying responsive design techniques. For the API communication, DIO is used to properly manage the middleware. Implementation of a clean architecture with MVVM, applying Clean Code principles to ensure scalable, maintainable and modular code. State and reactivity management using Provider. This project works in an Agile (Scrum) environment, using JIRA for project management. Use of GitFlow on GitHub for version control.'**
+  /// **'I was born in the city of Albacete, where I obtained my degree in Computer Engineering at the University of Castilla-La Mancha in 2022. There I was awarded with the prize for the most innovative Final Degree Project by the Campollano Foundation (2022). \n\nProfessional in front-end development since 2020, specialized in Flutter and the Android/iOS ecosystem. I have extensive experience using programming languages such as Dart and Kotlin, and I consistently apply Clean Code principles and scalable architectures like MVVM and Clean Architecture. I also master different levels of testing in Flutter, including unit, widget, and integration tests, ensuring the quality and stability of the applications I build. In my day-to-day role as a senior front-end developer, I design and develop high-performance mobile and web applications, using state management solutions such as Provider, BLoC, and Cubit, as well as other advanced practices in modern Flutter development. I have also contributed to the open-source ecosystem by developing packages published on pub.dev. In addition to my work as a front-end developer, I am the founder and organizer of Flutter Murcia, a local community created to share knowledge and connect developers in the region who are interested in Flutter. I have participated as a speaker in events such as #FlutterInProductionExtended by Flutter Málaga, and in the workshop “Learn to Use Flutter and Build Cross-Platform Apps,” organized by CEEIM and MurciaDev.'**
   String get description;
 
   /// No description provided for @tech.
@@ -335,8 +335,26 @@ abstract class AppLocalizations {
   /// No description provided for @seeGithub.
   ///
   /// In en, this message translates to:
-  /// **'SEE GITHUB'**
+  /// **'SEE IN GITHUB'**
   String get seeGithub;
+
+  /// No description provided for @seeGooglePlay.
+  ///
+  /// In en, this message translates to:
+  /// **'SEE IN GOOGLE PLAY'**
+  String get seeGooglePlay;
+
+  /// No description provided for @seePubDev.
+  ///
+  /// In en, this message translates to:
+  /// **'SEE IN PUB.DEV'**
+  String get seePubDev;
+
+  /// No description provided for @flutterLibrary.
+  ///
+  /// In en, this message translates to:
+  /// **'Flutter Library - Pub.dev'**
+  String get flutterLibrary;
 
   /// No description provided for @projects.
   ///
@@ -349,6 +367,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Years\nExperience'**
   String get experienceInYears;
+
+  /// No description provided for @fluencyPath.
+  ///
+  /// In en, this message translates to:
+  /// **'Fluency Path'**
+  String get fluencyPath;
+
+  /// No description provided for @flutterFullLayout.
+  ///
+  /// In en, this message translates to:
+  /// **'Flutter Full Layout'**
+  String get flutterFullLayout;
+
+  /// No description provided for @deepObserver.
+  ///
+  /// In en, this message translates to:
+  /// **'Deep Observer'**
+  String get deepObserver;
+
+  /// No description provided for @fluencyPathDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'With our app, you can successfully prepare for your English certification exam in a simple and effective way. In it, you will find exercises of different styles.'**
+  String get fluencyPathDesc;
+
+  /// No description provided for @deepObserverDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Library that enables simple and efficient management of application responsiveness in Flutter.'**
+  String get deepObserverDesc;
+
+  /// No description provided for @flutterFullLayoutDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'CLI to generate a complete Flutter project with CLEAN ARCHITECTURE. It will allow the developer to create a base project with CLEAN ARCHITECTURE. In this architecture, we use services (Cubits) for each use case. These services will communicate with repositories (for each use case), and these repositories will communicate with the DIO client (HTTP).'**
+  String get flutterFullLayoutDesc;
 }
 
 class _AppLocalizationsDelegate

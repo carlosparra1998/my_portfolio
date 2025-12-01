@@ -9,141 +9,184 @@ import '../classes/technology.dart';
 import '../classes/utility.dart';
 
 List<ProjectModel> get projects => [
-  ProjectModel(
-    project: translate.appFlutter,
-    title: translate.taller29FrontTitleProject,
-    description: translate.taller29FrontDescriptionProject,
-    appPhotos: AppConstants.project6,
-    projectLink: AppConstants.tallerFrontUrl,
-    techUsed: [
-      TechnologyConstants.flutter,
-      TechnologyConstants.dart,
-      TechnologyConstants.git
-    ],
-    buttonText: translate.seeGithub,
-  ),
-  ProjectModel(
-    project: translate.appPython,
-    title: translate.taller29BackTitleProject,
-    description: translate.taller29BackDescriptionProject,
-    appPhotos: AppConstants.project6,
-    projectLink: AppConstants.tallerBackUrl,
-    techUsed: [
-      TechnologyConstants.python,
-      TechnologyConstants.fastapi,
-      TechnologyConstants.git
-    ],
-    buttonText: translate.seeGithub,
-  ),
-  ProjectModel(
-    project: translate.appFlutter,
-    title: translate.myPersonalTasksTitleProject,
-    description: translate.myPersonalTasksDescriptionProject,
-    appPhotos: AppConstants.project5,
-    projectLink: AppConstants.myPersonalTasksUrl,
-    techUsed: [
-      TechnologyConstants.flutter,
-      TechnologyConstants.dart,
-      TechnologyConstants.git
-    ],
-    buttonText: translate.seeGithub,
-  ),
-  ProjectModel(
-    project: translate.appFlutter,
-    title: translate.wsTitleProject,
-    description: translate.wsDescriptionProject,
-    appPhotos: AppConstants.project4,
-    projectLink: AppConstants.wsUrl,
-    techUsed: [
-      TechnologyConstants.flutter,
-      TechnologyConstants.dart,
-      TechnologyConstants.git
-    ],
-    buttonText: translate.seeGithub,
-  ),
-  ProjectModel(
-    project: translate.appFlutter,
-    title: translate.faClientTitleProject,
-    description: translate.faClientDescriptionProject,
-    appPhotos: AppConstants.project2,
-    projectLink: AppConstants.faClientUrl,
-    techUsed: [
-      TechnologyConstants.flutter,
-      TechnologyConstants.dart,
-      TechnologyConstants.tensorflow,
-      TechnologyConstants.mqtt
-    ],
-    buttonText: translate.seeGithub,
-  ),
-  ProjectModel(
-    project: translate.appFlutter,
-    title: translate.faEmployeeTitleProject,
-    description: translate.faEmployeeDescriptionProject,
-    appPhotos: AppConstants.project3,
-    projectLink: AppConstants.faEmployeeUrl,
-    techUsed: [
-      TechnologyConstants.flutter,
-      TechnologyConstants.dart,
-      TechnologyConstants.mqtt
-    ],
-    buttonText: translate.seeGithub,
-  ),
-  ProjectModel(
-    project: translate.appPython,
-    title: translate.faServerTitleProject,
-    description: translate.faServerDescriptionProject,
-    appPhotos: AppConstants.project1,
-    projectLink: AppConstants.faServerUrl,
-    techUsed: [
-      TechnologyConstants.linux,
-      TechnologyConstants.psql,
-      TechnologyConstants.python,
-      TechnologyConstants.mqtt
-    ],
-    buttonText: translate.seeGithub,
-  ),
-];
+      ProjectModel(
+        project: translate.appFlutter,
+        title: translate.fluencyPath,
+        description: translate.fluencyPathDesc,
+        appPhotos: AppConstants.projectFluencyPath,
+        projectLink: AppConstants.fluencyPath,
+        techUsed: [
+          TechnologyConstants.flutter,
+          TechnologyConstants.dart,
+          TechnologyConstants.git,
+          TechnologyConstants.fastapi,
+          TechnologyConstants.android,
+          TechnologyConstants.psql,
+          TechnologyConstants.docker,
+        ],
+        buttonText: translate.seeGooglePlay,
+      ),
+      ProjectModel(
+        project: translate.flutterLibrary,
+        title: translate.flutterFullLayout,
+        description: translate.flutterFullLayoutDesc,
+        appPhotos: AppConstants.projectFlutterFullLayout,
+        projectLink: AppConstants.flutterFullLayout,
+        techUsed: [
+          TechnologyConstants.flutter,
+          TechnologyConstants.dart,
+          TechnologyConstants.git,
+        ],
+        buttonText: translate.seePubDev,
+      ),
+      ProjectModel(
+        project: translate.flutterLibrary,
+        title: translate.deepObserver,
+        description: translate.deepObserverDesc,
+        appPhotos: AppConstants.projectDeepObserver,
+        projectLink: AppConstants.deepObserver,
+        techUsed: [
+          TechnologyConstants.flutter,
+          TechnologyConstants.dart,
+          TechnologyConstants.git,
+        ],
+        buttonText: translate.seePubDev,
+      ),
+      ProjectModel(
+        project: translate.appFlutter,
+        title: translate.taller29FrontTitleProject,
+        description: translate.taller29FrontDescriptionProject,
+        appPhotos: AppConstants.project6,
+        projectLink: AppConstants.tallerFrontUrl,
+        techUsed: [
+          TechnologyConstants.flutter,
+          TechnologyConstants.dart,
+          TechnologyConstants.git
+        ],
+        buttonText: translate.seeGithub,
+      ),
+      ProjectModel(
+        project: translate.appPython,
+        title: translate.taller29BackTitleProject,
+        description: translate.taller29BackDescriptionProject,
+        appPhotos: AppConstants.project6,
+        projectLink: AppConstants.tallerBackUrl,
+        techUsed: [
+          TechnologyConstants.python,
+          TechnologyConstants.fastapi,
+          TechnologyConstants.git
+        ],
+        buttonText: translate.seeGithub,
+      ),
+      ProjectModel(
+        project: translate.appFlutter,
+        title: translate.myPersonalTasksTitleProject,
+        description: translate.myPersonalTasksDescriptionProject,
+        appPhotos: AppConstants.project5,
+        projectLink: AppConstants.myPersonalTasksUrl,
+        techUsed: [
+          TechnologyConstants.flutter,
+          TechnologyConstants.dart,
+          TechnologyConstants.git
+        ],
+        buttonText: translate.seeGithub,
+      ),
+      ProjectModel(
+        project: translate.appFlutter,
+        title: translate.wsTitleProject,
+        description: translate.wsDescriptionProject,
+        appPhotos: AppConstants.project4,
+        projectLink: AppConstants.wsUrl,
+        techUsed: [
+          TechnologyConstants.flutter,
+          TechnologyConstants.dart,
+          TechnologyConstants.git
+        ],
+        buttonText: translate.seeGithub,
+      ),
+      ProjectModel(
+        project: translate.appFlutter,
+        title: translate.faClientTitleProject,
+        description: translate.faClientDescriptionProject,
+        appPhotos: AppConstants.project2,
+        projectLink: AppConstants.faClientUrl,
+        techUsed: [
+          TechnologyConstants.flutter,
+          TechnologyConstants.dart,
+          TechnologyConstants.tensorflow,
+          TechnologyConstants.mqtt
+        ],
+        buttonText: translate.seeGithub,
+      ),
+      ProjectModel(
+        project: translate.appFlutter,
+        title: translate.faEmployeeTitleProject,
+        description: translate.faEmployeeDescriptionProject,
+        appPhotos: AppConstants.project3,
+        projectLink: AppConstants.faEmployeeUrl,
+        techUsed: [
+          TechnologyConstants.flutter,
+          TechnologyConstants.dart,
+          TechnologyConstants.mqtt
+        ],
+        buttonText: translate.seeGithub,
+      ),
+      ProjectModel(
+        project: translate.appPython,
+        title: translate.faServerTitleProject,
+        description: translate.faServerDescriptionProject,
+        appPhotos: AppConstants.project1,
+        projectLink: AppConstants.faServerUrl,
+        techUsed: [
+          TechnologyConstants.linux,
+          TechnologyConstants.psql,
+          TechnologyConstants.python,
+          TechnologyConstants.mqtt
+        ],
+        buttonText: translate.seeGithub,
+      ),
+    ];
 
- List<Stat> get stats => [
-  Stat(count: "7", text: translate.projects),
-  Stat(count: "1", text: translate.awards),
-  Stat(count: "3", text: translate.experienceInYears),
-];
+List<Stat> get stats => [
+      Stat(count: projects.length.toString(), text: translate.projects),
+      Stat(count: "1", text: translate.awards),
+      Stat(count: "4", text: translate.experienceInYears),
+    ];
 
 List<FooterItem> get footerItems => [
-  FooterItem(
-      iconData: Icons.location_on,
-      title: translate.address,
-      text1: AppConstants.getAddress,
-      text2: translate.getCountry,
-      onTap: () {
-        Utilty.openUrl(AppConstants.location);
-      }),
-  FooterItem(
-      iconData: Icons.phone,
-      title: translate.phone,
-      text1: AppConstants.getCallPhone,
-      text2: "",
-      onTap: () {
-        Utilty.openUrl(AppConstants.phone);
-      }),
-  FooterItem(
-      iconData: Icons.mail,
-      title: translate.email,
-      text1: AppConstants.getEmail,
-      text2: "",
-      onTap: () {
-        Utilty.openUrl(AppConstants.mailTo);
-      }),
-  FooterItem(
-      iconData: Icons.sms,
-      title: translate.whatsapp,
-      text1: AppConstants.getWhatsapp,
-      text2: "",
-      onTap: () {
-        Utilty.openUrl(AppConstants.waMe);
-      })
-];
+      FooterItem(
+          iconData: Icons.location_on,
+          title: translate.address,
+          text1: AppConstants.getAddress,
+          text2: translate.getCountry,
+          onTap: () {
+            Utilty.openUrl(AppConstants.location);
+          }),
+      FooterItem(
+          iconData: Icons.phone,
+          title: translate.phone,
+          text1: AppConstants.getCallPhone,
+          text2: "",
+          onTap: () {
+            Utilty.openUrl(AppConstants.phone);
+          }),
+      FooterItem(
+          iconData: Icons.mail,
+          title: translate.email,
+          text1: AppConstants.getEmail,
+          text2: "",
+          onTap: () {
+            Utilty.openUrl(AppConstants.mailTo);
+          }),
+      FooterItem(
+          iconData: Icons.sms,
+          title: translate.whatsapp,
+          text1: AppConstants.getWhatsapp,
+          text2: "",
+          onTap: () {
+            Utilty.openUrl(AppConstants.waMe);
+          })
+    ];
 
 class TechnologyConstants {
   static TechnologyModel python =
